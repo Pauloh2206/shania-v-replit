@@ -10,7 +10,7 @@ const execAsync = promisify(exec);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const REPO_URL = 'https://github.com/Pauloh2206/Shania-Yan-Mod.git';
+const REPO_URL = 'https://github.com/Pauloh2206/shania-v-replit.git';
 // ---------------------------------------
 
 const BACKUP_DIR = path.join(process.cwd(), `backup_${new Date().toISOString().replace(/[:.]/g, '_').replace(/T/, '_')}`);

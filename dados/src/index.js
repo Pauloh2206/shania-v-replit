@@ -8496,7 +8496,7 @@ if (forcas[from]) {
           if (!fs.existsSync(pathz.join(__dirname, '..', 'database', 'updateSave.json'))) return reply('❌ Sua versão não tem suporte a esse sistema ainda.');
           
           // 1. MUDANÇA AQUI: Busca o último commit do seu novo repositório
-          const AtualCom = await axios.get('https://api.github.com/repos/Pauloh2206/Shania-Yan-Mod/commits?per_page=1', {
+          const AtualCom = await axios.get('https://api.github.com/repos/Pauloh2206/shania-v-replit/commits?per_page=1', {
             headers: {
               Accept: 'application/vnd.github+json'
             }
@@ -8508,7 +8508,7 @@ if (forcas[from]) {
           
           if (AtualCom > total) {
             // 2. MUDANÇA AQUI: Passa o nome do seu novo repositório para a função VerifyUpdate
-            const TextZin = await VerifyUpdate('Pauloh2206/Shania-Yan-Mod', AtualCom - total);
+            const TextZin = await VerifyUpdate('Pauloh2206/shania-v-replit', AtualCom - total);
             await reply(TextZin);
           } else {
             await reply('Você ja esta utilizando a versão mais recente da bot.');
