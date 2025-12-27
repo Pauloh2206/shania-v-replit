@@ -6,6 +6,12 @@ import path from 'path';
 import { spawn, execSync } from 'child_process';
 import readline from 'readline/promises';
 import os from 'os';
+import http from 'http';
+http.createServer((req, res) => {
+  res.write("Bot Shania Yan está Online!");
+  res.end();
+}).listen(8080);
+console.log("🌐 Servidor Keep-Alive iniciado na porta 8080");
 
 const CONFIG_PATH = path.join(process.cwd(), 'dados', 'src', 'config.json');
 const NODE_MODULES_PATH = path.join(process.cwd(), 'node_modules');
