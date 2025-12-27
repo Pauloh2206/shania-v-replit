@@ -1,6 +1,4 @@
-modules = ["nodejs-20", "bash"]
-[agent]
-expertMode = true
+run = "npm start"
 
 [nix]
-channel = "stable-25_05"
+channel = "stable-24_05"
