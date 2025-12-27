@@ -8974,7 +8974,7 @@ if (forcas[from]) {
       case 'atualizar':
       case 'update':
       case 'atualizarbot':
-        if (!isOwner || isSubOwner) return reply("🚫 Apenas o Dono principal pode atualizar o bot!");
+        if (!isOwner) return reply("🚫 Apenas o Dono principal pode atualizar o bot!");
         
         try {
           const updateScriptPath = pathz.join(__dirname, '.scripts', 'update.js');
