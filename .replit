@@ -1,4 +1,6 @@
 modules = ["nodejs-20", "bash"]
+run = "npm start"
+
 [agent]
 expertMode = true
 
