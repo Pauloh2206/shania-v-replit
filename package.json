@@ -9,7 +9,8 @@
   "dev": "nodemon -r dotenv/config dados/src/.scripts/start.js",
   "config": "node dados/src/.scripts/config.js",
   "config:install": "node dados/src/.scripts/config.js --install",
-  "update": "node dados/src/.scripts/update.js"
+  "update": "node dados/src/.scripts/update.js",
+  "postinstall": "python3 -m pip install --upgrade yt-dlp || pip install --upgrade yt-dlp || pip3 install --upgrade yt-dlp || echo 'ERRO: Não foi possível instalar o yt-dlp automaticamente. Instale manualmente usando: pip install yt-dlp'"
  },
  "repository": {
   "type": "git",
